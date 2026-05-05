@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+	</Events>
+	<ChildItems>
+		<Table name="РасписаниеВТаблице" id="20">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.РасписаниеВТаблице</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РасписаниеВТаблицеКонтекстноеМеню" id="21"/>
+			<AutoCommandBar name="РасписаниеВТаблицеКоманднаяПанель" id="22"/>
+			<ExtendedTooltip name="РасписаниеВТаблицеРасширеннаяПодсказка" id="23"/>
+			<SearchStringAddition name="РасписаниеВТаблицеСтрокаПоиска" id="24">
+				<AdditionSource>
+					<Item>РасписаниеВТаблице</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РасписаниеВТаблицеСтрокаПоискаКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="РасписаниеВТаблицеСтрокаПоискаРасширеннаяПодсказка" id="26"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РасписаниеВТаблицеСостояниеПросмотра" id="27">
+				<AdditionSource>
+					<Item>РасписаниеВТаблице</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РасписаниеВТаблицеСостояниеПросмотраКонтекстноеМеню" id="28"/>
+				<ExtendedTooltip name="РасписаниеВТаблицеСостояниеПросмотраРасширеннаяПодсказка" id="29"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РасписаниеВТаблицеУправлениеПоиском" id="30">
+				<AdditionSource>
+					<Item>РасписаниеВТаблице</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РасписаниеВТаблицеУправлениеПоискомКонтекстноеМеню" id="31"/>
+				<ExtendedTooltip name="РасписаниеВТаблицеУправлениеПоискомРасширеннаяПодсказка" id="32"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="РасписаниеВТаблицеНомерСтроки" id="33">
+					<DataPath>Объект.РасписаниеВТаблице.LineNumber</DataPath>
+					<TitleLocation>Left</TitleLocation>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<FooterHorizontalAlign>Center</FooterHorizontalAlign>
+					<Width>1</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="РасписаниеВТаблицеНомерСтрокиКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="РасписаниеВТаблицеНомерСтрокиРасширеннаяПодсказка" id="35"/>
+				</LabelField>
+				<ColumnGroup name="Время" id="56">
+					<ReadOnly>true</ReadOnly>
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ВремяРасширеннаяПодсказка" id="57"/>
+					<ChildItems>
+						<InputField name="РасписаниеВТаблицеНачало" id="36">
+							<DataPath>Объект.РасписаниеВТаблице.Начало</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РасписаниеВТаблицеНачалоКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="РасписаниеВТаблицеНачалоРасширеннаяПодсказка" id="38"/>
+						</InputField>
+						<InputField name="РасписаниеВТаблицеКонец" id="39">
+							<DataPath>Объект.РасписаниеВТаблице.Конец</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РасписаниеВТаблицеКонецКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="РасписаниеВТаблицеКонецРасширеннаяПодсказка" id="41"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ПредметГр" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предмет гр</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предмет гр</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ПредметГрРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<InputField name="РасписаниеВТаблицеПредмет" id="42">
+							<DataPath>Объект.РасписаниеВТаблице.Предмет</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Предмет</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РасписаниеВТаблицеПредметКонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="РасписаниеВТаблицеПредметРасширеннаяПодсказка" id="44"/>
+						</InputField>
+						<LabelField name="РасписаниеВТаблицеПредметАудитория" id="50">
+							<DataPath>Объект.РасписаниеВТаблице.Предмет.Аудитория</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РасписаниеВТаблицеПредметАудиторияКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="РасписаниеВТаблицеПредметАудиторияРасширеннаяПодсказка" id="52"/>
+						</LabelField>
+						<LabelField name="РасписаниеВТаблицеПредметПреподаватель" id="53">
+							<DataPath>Объект.РасписаниеВТаблице.Предмет.Преподаватель</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РасписаниеВТаблицеПредметПреподавательКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="РасписаниеВТаблицеПредметПреподавательРасширеннаяПодсказка" id="55"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="РасписаниеВТаблицеДЗ" id="45">
+					<DataPath>Объект.РасписаниеВТаблице.ДЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<MultiLine>true</MultiLine>
+					<ExtendedEdit>true</ExtendedEdit>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасписаниеВТаблицеДЗКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="РасписаниеВТаблицеДЗРасширеннаяПодсказка" id="47"/>
+				</InputField>
+				<InputField name="РасписаниеВТаблицеОценка" id="58">
+					<DataPath>Объект.РасписаниеВТаблице.Оценка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасписаниеВТаблицеОценкаКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="РасписаниеВТаблицеОценкаРасширеннаяПодсказка" id="60"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Table name="ПредметВывод" id="7">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Предмет.Вывод</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПредметВыводКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="ПредметВыводКоманднаяПанель" id="9"/>
+			<ExtendedTooltip name="ПредметВыводРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="ПредметВыводСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>ПредметВывод</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПредметВыводСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ПредметВыводСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПредметВыводСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>ПредметВывод</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПредметВыводСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ПредметВыводСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПредметВыводУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>ПредметВывод</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПредметВыводУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ПредметВыводУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Расписание</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>1/0:8ea38a88-986e-42e1-9b00-8088d9b42192</Field>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
